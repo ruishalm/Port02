@@ -1,0 +1,64 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 1.25rem; /* 20px */
+  border: 0.7rem solid #ccc; /* 0.7rem */
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px */
+  width: 30rem; /* 300px */
+  height: 40rem; /* 400px */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.popup textarea {
+  width: 100%;
+  height: calc(100% - 4rem); /* Ajustar a altura da caixa de texto */
+  margin: 0.625rem 0; /* 10px */
+  box-sizing: border-box;
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.popup button {
+  display: block;
+  width: auto;
+  height: 2rem; /* Ajuste a altura conforme necessário */
+  padding: 0.25rem 0.5rem; /* 4px 8px */
+  margin: 0.625rem auto; /* 10px auto */
+  background-color: #ccc; /* Cor neutra */
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem; /* 4px */
+  font-size: 0.875rem; /* 14px */
+  transition: background-color 0.3s;
+}
+
+.popup button:disabled {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.popup button:hover:not(:disabled) {
+  background-color: #bbb;
+}
+
+.close-button {
+  background-color: #ccc; /* Cor neutra */
+}
+
+.close-button:hover {
+  background-color: #bbb;
+}
+
+.general-popup {
+  background-color: #d3d3d3 !important; /* Cinza bem clarinho */
+  border: 0.7rem solid #c0c0c0 !important; /* Borda cinza clara */
+}
+
+.important-popup {
+  background-color: #ffcccc !important; /* Vermelho bem fraco */
+  border: 0.7rem solid #ff9999 !important; /* Borda vermelha clara */
+}

@@ -1,0 +1,99 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFEB3B; /* Cor de post-it */
+  padding: 1.25rem !important; /* 20px */
+  border: 0.7rem solid #d3d3d3 !important; /* Borda cinza clara de 0.7rem */
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1) !important; /* 10px */
+  width: 30rem !important; /* 300px */
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.popup h3 {
+  margin-top: 0 !important;
+}
+
+.popup ul {
+  list-style-type: none !important;
+  padding: 0 !important;
+  border: 0.0625rem solid #333 !important; /* Borda cinza escuro */
+  margin-top: 1rem !important;
+}
+
+.popup ul::before {
+  content: "Lista do dia";
+  display: block;
+  font-weight: bold;
+  padding: 0.5rem;
+  background: #d8d8d8 !important;
+  border-bottom: 0.0625rem solid #333 !important; /* Borda cinza escuro */
+}
+
+.popup input[type="text"] {
+  width: 100% !important;
+  padding: 0.5rem !important; /* 8px */
+  margin: 0.625rem 0 !important; /* 10px */
+  box-sizing: border-box !important;
+  border: 0.0625rem solid #333 !important; /* Borda cinza escuro */
+}
+
+.popup textarea {
+  width: 100% !important;
+  margin: 0.625rem 0 !important; /* 10px */
+  box-sizing: border-box !important;
+  resize: vertical !important; /* Permite redimensionar verticalmente */
+  border: 0.0625rem solid #333 !important; /* Borda cinza escuro */
+}
+
+.popup button {
+  display: block !important;
+  width: auto !important;
+  height: 2rem !important; /* Ajuste a altura conforme necessário */
+  padding: 0.25rem 0.5rem !important; /* 4px 8px */
+  margin: 0.625rem auto !important; /* 10px auto */
+  background-color: #ccc !important; /* Cor neutra */
+  color: black !important;
+  border: none !important;
+  cursor: pointer !important;
+  border-radius: 0.25rem !important; /* 4px */
+  font-size: 0.875rem !important; /* 14px */
+  transition: background-color 0.3s !important;
+}
+
+.popup button:disabled {
+  background-color: #eee !important;
+  cursor: not-allowed !important;
+}
+
+.popup button:hover:not(:disabled) {
+  background-color: #bbb !important;
+}
+
+.close-button {
+  background-color: #ccc !important; /* Cor neutra */
+}
+
+.close-button:hover {
+  background-color: #bbb !important;
+}
+
+.self-care-popup {
+  background-color: #90EE90 !important; /* Verde claro */
+  border: 0.0625rem solid #76c776 !important; /* Borda verde mais escuro */
+}
+
+.self-care-popup button {
+  background-color: #76c776 !important; /* Verde mais escuro */
+  color: white !important;
+}
+
+.self-care-popup button:hover {
+  background-color: #5ca65c !important; /* Verde ainda mais escuro */
+}
+
+.task-list {
+  background: #ffffff !important; /* Cor de post-it */
+}

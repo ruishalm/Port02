@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.app {
+  font-family: Arial, sans-serif;
+  margin: 1.25rem;
+  background-color: white; /* Fundo da página branco */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.notes-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.25rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.notes-section button {
+  width: 25rem; /* Dobrar a largura */
+  height: 10rem; /* Reduzir a altura em 20% */
+  color: black; /* Texto em preto */
+  border: 0.1rem solid #ccc; /* Borda ao redor dos botões grandes */
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  transition: background-color 0.3s;
+  text-align: center; /* Centralizar o texto */
+  padding-top: 0.5rem; /* Espaçamento do topo */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start; /* Alinhar o texto ao topo */
+}
+
+.notes-section button.general {
+  background-color: #d3d3d3; /* Cinza bem clarinho */
+}
+
+.notes-section button.general:hover {
+  background-color: #c0c0c0;
+}
+
+.notes-section button.important {
+  background-color: #ffcccc; /* Vermelho bem fraco */
+}
+
+.notes-section button.important:hover {
+  background-color: #ff9999;
+}
+
+.days-section {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 colunas */
+  gap: 1rem; /* Espaçamento igual ao dos botões grandes */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  max-width: 52rem; /* Ajustar a largura total da seção para aproximar os botões */
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.days-section button {
+  width: 12.5rem;
+  height: 12.5rem;
+  background-color: #FFEB3B; /* Cor dos botões diários */
+  color: black; /* Texto em preto */
+  border: 0.1rem solid #ccc; /* Borda ao redor dos dias */
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  transition: background-color 0.3s;
+  text-align: center; /* Centralizar o texto */
+  padding-top: 0.5rem; /* Espaçamento do topo */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinhar o texto ao topo */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.days-section button:hover {
+  background-color: #FFD700; /* Cor de fundo ao passar o mouse */
+}
+
+.days-section .self-care-button {
+  background-color: #90EE90; /* Verde claro */
+  color: black;
+  border: 0.1rem solid #76c776; /* Borda ao redor do botão self-care */
+}
+
+.days-section .self-care-button:hover {
+  background-color: #76c776; /* Verde mais escuro ao passar o mouse */
 }
