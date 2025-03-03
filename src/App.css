@@ -1,7 +1,7 @@
 .app {
   font-family: Arial, sans-serif;
   margin: 1.25rem;
-  background-color: white; /* Fundo da página branco */
+  background-color: white;
 }
 
 .notes-section {
@@ -12,23 +12,23 @@
 }
 
 .notes-section button {
-  width: 25rem; /* Dobrar a largura */
-  height: 10rem; /* Reduzir a altura em 20% */
-  color: black; /* Texto em preto */
-  border: 0.1rem solid #ccc; /* Borda ao redor dos botões grandes */
+  width: 25rem;
+  height: 10rem;
+  color: black;
+  border: 0.1rem solid #ccc;
   cursor: pointer;
   border-radius: 0.25rem;
   font-size: 1.25rem;
   transition: background-color 0.3s;
-  text-align: center; /* Centralizar o texto */
-  padding-top: 0.5rem; /* Espaçamento do topo */
+  text-align: center;
+  padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Alinhar o texto ao topo */
+  justify-content: flex-start;
 }
 
 .notes-section button.general {
-  background-color: #d3d3d3; /* Cinza bem clarinho */
+  background-color: #d3d3d3;
 }
 
 .notes-section button.general:hover {
@@ -36,7 +36,7 @@
 }
 
 .notes-section button.important {
-  background-color: #ffcccc; /* Vermelho bem fraco */
+  background-color: #ffcccc;
 }
 
 .notes-section button.important:hover {
@@ -45,41 +45,41 @@
 
 .days-section {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 colunas */
-  gap: 1rem; /* Espaçamento igual ao dos botões grandes */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  max-width: 52rem; /* Ajustar a largura total da seção para aproximar os botões */
+  max-width: 52rem;
   margin: 0 auto;
 }
 
 .days-section button {
   width: 12.5rem;
   height: 12.5rem;
-  background-color: #FFEB3B; /* Cor dos botões diários */
-  color: black; /* Texto em preto */
-  border: 0.1rem solid #ccc; /* Borda ao redor dos dias */
+  background-color: #FFEB3B;
+  color: black;
+  border: 0.1rem solid #ccc;
   cursor: pointer;
   border-radius: 0.25rem;
   font-size: 1.25rem;
   transition: background-color 0.3s;
-  text-align: center; /* Centralizar o texto */
-  padding-top: 0.5rem; /* Espaçamento do topo */
+  text-align: center;
+  padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Alinhar o texto ao topo */
+  justify-content: flex-start;
 }
 
 .days-section button:hover {
-  background-color: #FFD700; /* Cor de fundo ao passar o mouse */
+  background-color: #FFD700;
 }
 
 .days-section .self-care-button {
-  background-color: #90EE90; /* Verde claro */
+  background-color: #90EE90;
   color: black;
-  border: 0.1rem solid #76c776; /* Borda ao redor do botão self-care */
+  border: 0.1rem solid #76c776;
 }
 
 .days-section .self-care-button:hover {
-  background-color: #76c776; /* Verde mais escuro ao passar o mouse */
+  background-color: #76c776;
 }

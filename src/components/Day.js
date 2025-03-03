@@ -3,7 +3,7 @@ import './Day.css';
 
 const Day = ({ date, dayOfWeek }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(['tudo feito?']);
   const [newTask, setNewTask] = useState('');
   const [notes, setNotes] = useState('');
 

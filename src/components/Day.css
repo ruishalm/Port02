@@ -10,6 +10,7 @@
   width: 30rem !important; /* 300px */
   max-width: 100% !important;
   box-sizing: border-box !important;
+  overflow: hidden !important; /* Adicionado para evitar overflow */
 }
 
 .popup h3 {
@@ -32,8 +33,9 @@
   border-bottom: 0.0625rem solid #333 !important; /* Borda cinza escuro */
 }
 
-.popup input[type="text"] {
-  width: 100% !important;
+.popup input[type="text"],
+.popup textarea {
+  width: calc(100% - 6rem) !important; /* Reduzido bastante para evitar overflow */
   padding: 0.5rem !important; /* 8px */
   margin: 0.625rem 0 !important; /* 10px */
   box-sizing: border-box !important;
@@ -41,11 +43,7 @@
 }
 
 .popup textarea {
-  width: 100% !important;
-  margin: 0.625rem 0 !important; /* 10px */
-  box-sizing: border-box !important;
   resize: vertical !important; /* Permite redimensionar verticalmente */
-  border: 0.0625rem solid #333 !important; /* Borda cinza escuro */
 }
 
 .popup button {
@@ -74,6 +72,7 @@
 
 .close-button {
   background-color: #ccc !important; /* Cor neutra */
+  margin-bottom: 1rem !important; /* Adiciona margem inferior */
 }
 
 .close-button:hover {
@@ -83,6 +82,15 @@
 .self-care-popup {
   background-color: #90EE90 !important; /* Verde claro */
   border: 0.0625rem solid #76c776 !important; /* Borda verde mais escuro */
+}
+
+.self-care-popup input[type="text"],
+.self-care-popup textarea {
+  width: calc(100% - 6rem) !important; /* Reduzido bastante para evitar overflow */
+  padding: 0.5rem !important; /* 8px */
+  margin: 0.625rem 0 !important; /* 10px */
+  box-sizing: border-box !important;
+  border: 0.0625rem solid #333 !important; /* Borda cinza escuro */
 }
 
 .self-care-popup button {
