@@ -71,7 +71,7 @@ const App = () => {
     </div>
   );
 };
-
+/*sei la caraio kkk*/
 const getCurrentWeek = () => {
   const today = new Date();
   const weekNumber = getWeekNumber(today);

@@ -5,12 +5,12 @@
   transform: translate(-50%, -50%);
   background: #FFEB3B; /* Cor de post-it */
   padding: 1.25rem !important; /* 20px */
-  border: 0.7rem solid #d3d3d3 !important; /* Borda cinza clara de 0.7rem */
+  border: 0.7rem solid #d3d3d3 !important; 
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1) !important; /* 10px */
   width: 30rem !important; /* 300px */
   max-width: 100% !important;
   box-sizing: border-box !important;
-  overflow: hidden !important; /* Adicionado para evitar overflow */
+  overflow: hidden !important; 
 }
 
 .popup h3 {
@@ -30,12 +30,12 @@
   font-weight: bold;
   padding: 0.5rem;
   background: #d8d8d8 !important;
-  border-bottom: 0.0625rem solid #333 !important; /* Borda cinza escuro */
+  border-bottom: 0.0625rem solid #333 !important; 
 }
 
 .popup input[type="text"],
 .popup textarea {
-  width: calc(100% - 6rem) !important; /* Reduzido bastante para evitar overflow */
+  width: calc(100% - 6rem) !important; 
   padding: 0.5rem !important; /* 8px */
   margin: 0.625rem 0 !important; /* 10px */
   box-sizing: border-box !important;
@@ -43,16 +43,16 @@
 }
 
 .popup textarea {
-  resize: vertical !important; /* Permite redimensionar verticalmente */
+  resize: vertical !important;
 }
 
 .popup button {
   display: block !important;
   width: auto !important;
-  height: 2rem !important; /* Ajuste a altura conforme necessário */
+  height: 2rem !important; 
   padding: 0.25rem 0.5rem !important; /* 4px 8px */
   margin: 0.625rem auto !important; /* 10px auto */
-  background-color: #ccc !important; /* Cor neutra */
+  background-color: #ccc !important;
   color: black !important;
   border: none !important;
   cursor: pointer !important;
@@ -71,8 +71,8 @@
 }
 
 .close-button {
-  background-color: #ccc !important; /* Cor neutra */
-  margin-bottom: 1rem !important; /* Adiciona margem inferior */
+  background-color: #ccc !important;
+  margin-bottom: 1rem !important; 
 }
 
 .close-button:hover {
@@ -86,7 +86,7 @@
 
 .self-care-popup input[type="text"],
 .self-care-popup textarea {
-  width: calc(100% - 6rem) !important; /* Reduzido bastante para evitar overflow */
+  width: calc(100% - 6rem) !important; 
   padding: 0.5rem !important; /* 8px */
   margin: 0.625rem 0 !important; /* 10px */
   box-sizing: border-box !important;
@@ -103,5 +103,5 @@
 }
 
 .task-list {
-  background: #ffffff !important; /* Cor de post-it */
+  background: #ffffff !important; 
 }
